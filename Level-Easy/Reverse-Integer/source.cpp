@@ -5,6 +5,11 @@ public:
         char temp;
         char minus=s[0];
        
+        
+        if(stoi(s)<INT_MIN || stoi(s)>INT_MAX) {
+            return 0;
+        }
+       
         if(minus=='-'){
             
             s=s.substr(1,s.length());
